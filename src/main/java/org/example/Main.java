@@ -4,10 +4,12 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import org.testPackage.TextReader;
 import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 class Juice {
     public enum JuiceSize { SMALL, MEDIUM, LARGE};
@@ -58,8 +60,7 @@ public class Main {
     public static void workingWithLoops() {}
 
     public static void workingWithPackages() {
-        // Created a new class inside same package. imported it and using it now;
-
+        // Created a new class inside same package. imported it and using it here
         TestClass testClass = new TestClass("Hello", 10);
 
         int fetchedInt = testClass.getTestInt();
@@ -88,6 +89,12 @@ public class Main {
         }
     }
 
+    public static void workingWithStreams() {
+        String[] numbers = {"test", "hello"};
+        Stream<String> numberStream = Arrays.stream(numbers);
+        numberStream.forEach(System.out::println);
+    }
+
     public static void main(String[] args) {
 
 //        workingWithArrays();
@@ -98,7 +105,14 @@ public class Main {
 
 //        workingWithPackages();
 
-        workingWithFilesAndApis();
+//        workingWithFilesAndApis();
 
+//        workingWithStreams();
+
+        /*
+        TODO: READ INPUT FROM TERMINAL AND EXECUTE METHOD ACCORDINGLY.
+        SAVE FUNCTIONS INSIDE ARRAY
+        AND ACCESS ARRAY BASED ON KEY WHICH IS DERIVED FROM TERMINAL INPUT
+         */
     }
 }
