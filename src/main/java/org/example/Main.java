@@ -95,6 +95,9 @@ public class Main {
         numberStream.forEach(System.out::println);
     }
 
+    //TIP TODO: READ INPUT FROM TERMINAL AND EXECUTE METHOD ACCORDINGLY.
+    // SAVE FUNCTIONS INSIDE ARRAY
+    // AND ACCESS ARRAY BASED ON KEY WHICH IS DERIVED FROM TERMINAL INPUT
     public static void main(String[] args) {
 
 //        workingWithArrays();
@@ -109,10 +112,6 @@ public class Main {
 
 //        workingWithStreams();
 
-        /*
-        TODO: READ INPUT FROM TERMINAL AND EXECUTE METHOD ACCORDINGLY.
-        SAVE FUNCTIONS INSIDE ARRAY
-        AND ACCESS ARRAY BASED ON KEY WHICH IS DERIVED FROM TERMINAL INPUT
-         */
+
     }
 }
